@@ -109,7 +109,7 @@
         //echo $his_gen->get_history_images($searches);
         foreach($searches as $key => $value){
           if(!in_array($value, $history_product_ids)){
-            // IF ITEM IS NOT REPETED
+            // IF ITEM IS NOT REPEATED
             array_push($history_product_ids, $value);
           } // END IF
         }
