@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+<title>SimplyCharmlings</title>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="header" style="display: block;"> <img src="images/logo.jpg">
+  <div class="left">
+    <ul>
+      <li><a href="index.html"><span class="headermenutext">Home</span></a></li>
+      <li><a href="about.html"><span class="headermenutext">About Us</span></a></li>
+      <li><a href=""><span class="headermenutext">Product</span></a></li>
+      <li><a href="login.html"><span class="headermenutext">Log In</span></a></li>
+    </ul>
+  </div>
+
+  <div class="right">
+    <ul>
+      <li><a href=""><span class="leftmenutext">Facebook</span></a></li>
+      <li><a href=""><span class="leftmenutext">Twitter</span></a></li>
+      <li><a href=""><span class="leftmenutext">Instagram</span></a></li>
+      <li><a href="history.php"><span class="leftmenutext">History</span></a></li>
+      <li><a href="clear_session.php"><span class="leftmenutext">X</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="banner search-banner" style="display: block;">
+  <div id="banner">
+    <!--<h1>Search Stefan</h1>-->
+  </div>
+</div>
+<!--<script src="./custom_js/auto_complete.js"></script>-->
+<form
+    class="form_style"
+    action="baymax_hw4.php"
+    method="get"
+    id="php_form">
+    <fieldset>
+      <h1 class="logo">Key Chain Finder</h1>
+      <h1 class="logo" id="creator">☆∘ⓝⓐⓝⓒⓨ∘☆</h1>
+    </fieldset>
+    <fieldset>
+      <input type="text" id="search_text" name="search_box">
+      <input type="submit"  size="14" class="myButton" style="background-color:#5cbf2a;"
+        value="Search" name="submit_button" id="submit_button">
+    </fieldset>
+    <fieldset class="search-option">
+      <form id="radio_form">
+        <!--<input type="radio" class="radio-form" name="show_img" value="true" checked>
+          <span class="radio-form"> Greeting </span>
+        <input type="radio" class="radio-form" name="show_img" value="false">
+          <spane class="radio-form"> No Greeting </span>
+        <select class="styled-select" id="drop_down_option" name="dropdown_list">
+          <option selected="selected">10</option>
+          <option>5</option>
+          <option>3</option>
+        </select>-->
+        <!--<input type="submit"  size="14" class="myButton" style="background-color:#5cbf2a;"
+          value="Search" name="submit_button" id="submit_button">-->
+      </form>
+    </fieldset>
+  </form>
+</form>
+
+<div class="copyright" style="display: block;">
+  <p class="baymax">© Copyright 2016 CS174 Baymax All Rights Reserved.</p>
+</div>
+
+</div>
+<script>
+var $_searchQuery = $('#search_text');
+var data = [
+  "red",
+  "white",
+  "black",
+  "yellow",
+  "pink",
+  "green",
+  "brown",
+  "Faery Charmling",
+  "Pusheen",
+  "Molang",
+  "MarshMallow",
+  "Mummy",
+  "Donut",
+  "Molang Swiss Roll Cake",
+  "Molang Ear Rings",
+  "Cupcake",
+  "Flower Ear Rings"
+];
+
+$.ui.autocomplete.prototype._renderItem = function (ul, item) {
+    var re = new RegExp($.trim(this.term.toLowerCase()));
+    var t = item.label.replace(
+      re,
+      "<span style='font-weight:600;color:#5C5C5C;'>" +
+      $.trim(this.term.toLowerCase()) + "</span>"
+    );
+    return $("<li></li>")
+        .data("item.autocomplete", item)
+        .append("<a>" + t + "</a>")
+        .appendTo(ul);
+};
+
+$_searchQuery.autocomplete({
+    source: data
+});
+</script>
+</body>
+</html>

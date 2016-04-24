@@ -13,6 +13,9 @@ class FileHandler{
     $this->file_mode = $mode;
   }
 
-  
+  //TODO: IMPLEMENT get line by line
+  function get_content_line_by_line(){
+    return '';
+  }
 } // END CLASS FileHandler
 ?>

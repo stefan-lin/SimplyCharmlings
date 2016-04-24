@@ -69,8 +69,8 @@
   <div class="header" style="display: block;"> <img src="images/logo.jpg">
     <div class="left">
       <ul>
-        <li><a href=""><span class="headermenutext">Home</span></a></li>
-        <li><a href="index.html"><span class="headermenutext">Search</span></a></li>
+        <li><a href="index.html"><span class="headermenutext">Home</span></a></li>
+        <li><a href="search.html"><span class="headermenutext">Search</span></a></li>
         <li><a href=""><span class="headermenutext">Product</span></a></li>
         <li><a href=""><span class="headermenutext">Log In</span></a></li>
       </ul>

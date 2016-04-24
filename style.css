@@ -173,7 +173,7 @@ fieldset{
 }
 
 .myButton {
-	background-color:#3fcc65;
+	background-color:#5cbf2a;
 	-moz-border-radius:14px;
 	-webkit-border-radius:14px;
 	border-radius:20px;
@@ -182,13 +182,13 @@ fieldset{
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:14px;
+	font-size:16px;
 	padding:8px 20px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
 }
 .myButton:hover {
-	background-color:#5cbf2a;
+	background-color:red;
 }
 .myButton:active {
 	position:relative;
@@ -610,4 +610,36 @@ h1 {
 			height: 300px;
 			text-align: center;
 			line-height: 300px;
+		}
+
+		/****** jQuery autocomplete STYLING *************/
+		.ui-corner-all {
+		  -moz-border-radius: 0;
+		  -webkit-border-radius: 0;
+		  border-radius: 0;
+		}
+		.ui-menu {
+			padding-left: 0;
+			max-width: 300px;
+			list-style: none;
+		  border: 1px solid lightgray;
+		  font-family: Verdana, Arial, Helvetica, sans-serif;
+		  font-size: 15px;
+		}
+		.ui-menu .ui-menu-item a {
+		  color: #888;
+		}
+		.ui-menu .ui-menu-item:hover {
+		  display: block;
+		  text-decoration: none;
+		  color: #3D3D3D;
+		  cursor: pointer;
+		  background-color: lightgray;
+		  background-image: none;
+		}
+		.ui-widget-content .ui-state-hover, .ui-widget-content .ui-state-focus {
+		  background-image: none;
+		  background-color: lightgray;
+		  font-weight: bold;
+		  color: #3D3D3D;
 		}

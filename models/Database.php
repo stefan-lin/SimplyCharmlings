@@ -117,6 +117,52 @@
 
     return (count($result) == 0)? false: true;
   } // END is_username_exists FUNCTION
+
+  /**
+   * FUNCTION :
+   */
+  function get_product_info_by_img_url($img_url){
+    $query = 'SELECT product_name, price FROM Image AS i INNER JOIN ' .
+             'Product_Image AS pi ON i.image_id = pi.image_id INNER JOIN ' .
+             'Product AS p ON pi.product_id = p.product_id WHERE i.url = ';
+    try{
+    $url_query = $query . "'$img_url'". ';';
+    $url_statement = $this->dbh->prepare($url_query);
+    $url_statement->execute();
+    $product = $url_statement->fetchAll();
+
+    return $product;
+    }
+    catch(PDOException $ex){
+    echo 'ERROR : get_img_ur_by_id() : ' . $ex->getMessage();
+    }
+  }
+  /*
+  CREATE TABLE Image(
+    image_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    url VARCHAR(2083)
+  );
+  CREATE TABLE Product(
+    product_id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(60) NOT NULL,
+    category INT(6) UNSIGNED NOT NULL,
+    type INT(6) UNSIGNED NOT NULL,
+    price FLOAT(6) NOT NULL,
+    inventory INT(2) NOT NULL,
+    description TEXT(200) NOT NULL,
+    color INT(2) UNSIGNED NOT NULL,
+    FOREIGN KEY(category) REFERENCES Category(category_id),
+    FOREIGN KEY(type) REFERENCES Type(type_id),
+    FOREIGN KEY(color) REFERENCES Color(color_id)
+  );
+  CREATE TABLE Product_Image(
+    product_id INT(10) UNSIGNED NOT NULL,
+    image_id INT(6) UNSIGNED NOT NULL,
+
+    FOREIGN KEY(product_id) REFERENCES Product(product_id),
+    FOREIGN KEY(image_id) REFERENCES Image(image_id)
+  );
+  */
 } // END CLASS Database
 
 ?>
