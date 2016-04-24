@@ -44,9 +44,9 @@ $('.thumbnail').click(function(){
 ```
 
 **screenshots** :
-![ajax](C:\xampp\htdocs\SimplyCharmlings\screenshot\ajax_0.png "ajax")
-![ajax](C:\xampp\htdocs\SimplyCharmlings\screenshot\ajax_01.png "ajax")
-![ajax](C:\xampp\htdocs\SimplyCharmlings\screenshot\ajax_1.png "ajax")
+![ajax](screenshot\ajax_0.png "ajax")
+![ajax](screenshot\ajax_01.png "ajax")
+![ajax](screenshot\ajax_1.png "ajax")
 
 
 
@@ -93,5 +93,5 @@ $('.thumbnail').click(function(){
  ```
 
 **screenshots** :
-![jquery-ui](C:\xampp\htdocs\SimplyCharmlings\screenshot\ui_search.png "ui")
-![jquery-ui](C:\xampp\htdocs\SimplyCharmlings\screenshot\ui_search1.png "ui")
+![jquery-ui](screenshot\ui_search.png "ui")
+![jquery-ui](screenshot\ui_search1.png "ui")
