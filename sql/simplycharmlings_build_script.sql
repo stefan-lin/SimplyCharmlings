@@ -376,7 +376,13 @@ VALUES
   (null, 'molang swiss roll cake', 3, 2, 13.99, 10, 'It\'s a soft-felt plushie!', 2),
   (null, 'molang ear rings', 3, 3, 25.99, 5, 'It\'s a pair of white molang ear rings.', 2),
   (null, 'cupcake', 1, 2, 10.99, 12, 'It\'s a white molang cupcake.', 2),
-  (null, 'flower ear rings', 3, 4, 23.99, 6, 'Pink flower ear rings.', 5);
+  (null, 'flower ear rings', 3, 4, 23.99, 6, 'Pink flower ear rings.', 5),
+  (null, 'female doll', 1, 1, 15.99, 5, 'A female doll figure', 2),
+  (null, 'female doll grey', 1, 1, 15.99, 5, 'A female doll figure with grey hair', 4),
+  (null, 'female doll red', 1, 1, 15.99, 5, 'A female doll figure with red hair', 3),
+  (null, 'elf', 1, 1, 17.99, 5, 'An elf doll key jacket', 2),
+  (null, 'star', 1, 1, 14.99, 5, 'A key jacket with star icon', 2),
+  (null, 'animation figure', 1, 1, 25.99, 5, 'A blue figure', 2);
 --------------------------------------------------------------------------
 
 CREATE TABLE Product_Image(
@@ -399,7 +405,14 @@ VALUES
   (7, 21),
   (8, 23),
   (9, 25),
-  (10, 30);---------------------------------------------------------------
+  (10, 30),
+  (11, 100),
+  (12, 101),
+  (13, 102),
+  (14, 104),
+  (15, 105),
+  (16, 106);
+-------------------------------------------------------------------------
 
 CREATE TABLE User_Email(
   usr_id INT(6) UNSIGNED NOT NULL,
