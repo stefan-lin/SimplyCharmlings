@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Mar 10, 2016 at 11:55 PM
+-- Generation Time: Apr 24, 2016 at 10:15 PM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 5.5.33
 
@@ -406,7 +406,13 @@ INSERT INTO `product` (`product_id`, `product_name`, `category`, `type`, `price`
 (7, 'molang swiss roll cake', 3, 2, 13.99, 10, 'It''s a soft-felt plushie!', 2),
 (8, 'molang ear rings', 3, 3, 25.99, 5, 'It''s a pair of white molang ear rings.', 2),
 (9, 'cupcake', 1, 2, 10.99, 12, 'It''s a white molang cupcake.', 2),
-(10, 'flower ear rings', 3, 4, 23.99, 6, 'Pink flower ear rings.', 5);
+(10, 'flower ear rings', 3, 4, 23.99, 6, 'Pink flower ear rings.', 5),
+(11, 'female doll', 1, 1, 15.99, 5, 'A female doll figure', 2),
+(12, 'female doll grey', 1, 1, 15.99, 5, 'A female doll figure with grey hair', 4),
+(13, 'female doll red', 1, 1, 15.99, 5, 'A female doll figure with red hair', 3),
+(14, 'elf', 1, 1, 17.99, 5, 'An elf doll key jacket', 2),
+(15, 'star', 1, 1, 14.99, 5, 'A key jacket with star icon', 2),
+(16, 'animation figure', 1, 1, 25.99, 5, 'A blue figure', 2);
 
 -- --------------------------------------------------------
 
@@ -433,7 +439,13 @@ INSERT INTO `product_image` (`product_id`, `image_id`) VALUES
 (7, 21),
 (8, 23),
 (9, 25),
-(10, 30);
+(10, 30),
+(11, 100),
+(12, 101),
+(13, 102),
+(14, 104),
+(15, 105),
+(16, 106);
 
 -- --------------------------------------------------------
 
@@ -822,7 +834,7 @@ ALTER TABLE `phone`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `product_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `review`
 --
