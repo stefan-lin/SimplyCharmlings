@@ -68,13 +68,16 @@
     background: #99ff33;
 	  opacity: 0.7;
     transition:all 0.5s ease 0s;
+    vertical-align: middle;
+    text-align: center;
   }
 
   .button-add-to-cart{
+    border-radius: 50%;
     position: absolute;
     z-index: 10;
     bottom: 10px;
-    left: 250px;
+    left: 230px;
     background: url("add2cart.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     width: 30px;
@@ -93,38 +96,18 @@
 <script type="text/javascript">
 <!-- JQuery -->
 $(document).ready(function(){
-  //$('.thumbnail').mouseover(function(){
-  //  $(this).stop().effect('shake', {distance:3}, 3000);
-  //});
-
-  $('.thumbnail').mouseover(function(){
-    //var url = $(this img).attr('src');
+  $('.thumbnail').click(function(){
     var url = $(this).children("img").attr('src');
-    //$(this).children("span").css("display", "block");
     var text_box = $(this).children("span");
-    //alert(url);
-    //$(this).hide(1000);
     $.get("home_ajax.php", {"img_url": url}, function(data){
-      //text_box.css("display", "block");
-      //alert(data);
-
-      //$(this).children("span").html(data);
-      //$(this).children("span").css("display", "block");
-
       text_box.html(data);
       text_box.css("display", "block");
     });
-    //$(this).show(1000);
-    //alert("clicked : " + $(this).attr('src'));
 
     setTimeout(function(){
       text_box.css("display", "none");
     }, 2000);
   });
-
-  //$('.thumbnail').mouseout(function(){
-  //  $(this).children("span").css("display", "none");
-  //});
 });
 </script>
 <!--padding-top:calc(50% - 30px); in thumbail    transform: scale(1.2);-->
@@ -141,91 +124,105 @@ $(document).ready(function(){
       <div class="thumbnail">
         <img src="images/products_img/100.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
-
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/5.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/6.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/7.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/8.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/12.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/21.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/23.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/25.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/30.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/101.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/102.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/104.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/105.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <img src="images/products_img/106.png" width="300" height="250"/>
         <span class="hide-text">Hello World!</span>
+        <button class="button-add-to-cart"/>
       </div>
     </div>
 </div>

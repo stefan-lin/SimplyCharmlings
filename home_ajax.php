@@ -13,5 +13,5 @@ $db = new Database();
 $product = $db->get_product_info_by_img_url($img_url);
 $name = $product[0]['product_name'];
 $price = $product[0]['price'];
-print "<p>$name</p><p>$price</p>";
+print "<p>$name</p><p>\$ $price</p>";
 ?>
