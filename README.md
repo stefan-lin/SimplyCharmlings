@@ -5,8 +5,10 @@ Member:
   2. Ann
   3. Cromwell
   4. Kisha
-  5. Stefan
-####Assignment 6
+  5. Stefan     
+
+Assignment 6
+---
   * **AJAX** : `index.html`
     * Allowing users to click images of promo-products that were displayed in home page. Once the **clicking** event is triggered, JQuery will send the corresponding image url to the **PHP** script, `home_ajax.php`, through POST method. Then, in PHP script, we will retrieve (1) product name and (2) product price from database based upon image url. (Using inner join). At the end, we build up html string and send it back to `index.html`.
     * code:     
