@@ -93,5 +93,5 @@ $('.thumbnail').click(function(){
  ```
 
 **screenshots** :
-![jquery-ui](screenshot\ui_search.png "ui")
+![jquery-ui](https://github.com/stefan-lin/SimplyCharmlings/master/screenshot/ui_search.png "ui")
 ![jquery-ui](screenshot\ui_search1.png "ui")
