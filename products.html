@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+  <title>Simply Charmlings</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style/style_stef.css" media="all" />
+  <link rel="stylesheet" href="style.css" media="all" />
+  <!-- Latest compiled and minified CSS -->
+  <link
+    rel="stylesheet"
+    href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+  </script>
+  <!-- Latest compiled JavaScript -->
+  <script
+    src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
+  <script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+</head>
+
+<body>
+<!-- .button-add-to-cart background: url("add2cart.png") no-repeat scroll 0 0 transparent; -->
+<script type="text/javascript">
+$(document).ready(function(){
+  // Fixa navbar
+  var navbar = $('#nav-main'),
+      distance = navbar.offset().top,
+      $window = $(window);
+
+  $window.scroll(function() {
+      if ($window.scrollTop() >= distance) {
+          navbar.removeClass('navbar-fixed-top')
+                .addClass('navbar-fixed-top');
+          $("body").css("padding-top", "70px");
+      } else {
+          navbar.removeClass('navbar-fixed-top');
+          $("body").css("padding-top", "0px");
+      }
+  });
+
+  $('.navbar-header').mouseover(function(){
+    $(this).children('a').css("color", "#ff9999");
+  });
+  $('.navbar-header').mouseout(function(){
+    $(this).children('a').css("color", "#ffbf80");
+  });
+});
+</script>
+<nav id="nav-main" class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div style="float:left; display:inline-block;">
+    <div class="navbar-header navbar-nav" style="padding-left: 30px;">
+      <a class="navbar-brand" href="index.html" style="color: #ffbf80;">SimplyCharmlings</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="products.html">Product</a></li>
+      <li><a href="">Log In</a></li>
+    </ul>
+    </div>
+    <div style="float:right; display:inline-block;">
+    <ul class="nav navbar-nav nav-right">
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle"
+           data-toggle="dropdown"
+           href="#">Follow Us<span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </li>
+      <!-- TODO: fix history button -->
+      <li><a href="history.html">History</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<style>
+.wrapper-p{
+  min-width: 500px;
+  padding: 0 15px;
+  background-color: lightgrey;
+}
+.nav-left{
+  position: fixed;
+}
+.right-content{
+  background-color: #fff;
+}
+.left-buttons{
+  float: none;
+}
+.left-buttons > li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 3px;
+  padding-left: 3px;
+  display: block;
+}
+</style>
+<div class="wrapper-p">
+  <div class="row">
+    <div class="col-md-2 left">
+      <div class="nav-left">
+        <ul class="left-buttons">
+          <li><button>Figures</button></li>
+          <li><button>Food</button></li>
+          <li><button>Animation</button></li>
+          <li><button>All</button></li>
+          <li><button>Lucky</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-10 right-content">
+      <p>Content of the site</p>
+
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+      dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
+      eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+      sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+      dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
+      eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+      sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+      dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
+      eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+      sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

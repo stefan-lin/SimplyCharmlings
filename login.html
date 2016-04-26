@@ -25,7 +25,7 @@
     <ul>
       <li><a href=""><span class="headermenutext">Home</span></a></li>
       <li><a href="index.html"><span class="headermenutext">Search</span></a></li>
-      <li><a href=""><span class="headermenutext">Product</span></a></li>
+      <li><a href="product.html"><span class="headermenutext">Product</span></a></li>
       <li><a href=""><span class="headermenutext">Log In</span></a></li>
       <li><a href="signup.html"><span class="headermenutext">Join</span></a></li>
     </ul>
@@ -56,7 +56,7 @@
             onsubmit="return login_validate();">
         <table cellspacing="0" role="presentation">
         <tbody>
-          <tr> 
+          <tr>
             <td class="login-label">
               <label for="email" style="text-transform: none">Email</label>
             </td>
@@ -64,7 +64,7 @@
               <label for="password" style="text-transform: none">Password</label>
             </td>
           </tr>
-          <tr> 
+          <tr>
             <td class="login-boxes">
               <input type="text" name="username" id="username" maxlength="50" placeholder="Email"/>
             </td>
@@ -80,7 +80,7 @@
           </tr>
           <tr>
             <td><label style="text-transform: none">
-              <input type="checkbox" name="remember_account" id="remember_account" />  
+              <input type="checkbox" name="remember_account" id="remember_account" />
               Remeber me
             </label></td>
             <td>
@@ -90,7 +90,7 @@
         </tbody>
         </table>
       </form>
-  
+
 
 
     <canvas id = "canvas" width = "500" height = "100">
@@ -102,37 +102,37 @@
   {
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext('2d');
-    
+
     // Draw first circle
     context.beginPath();
     context.arc(50, 50, 40, 0, 2*Math.PI);
     context.fill();
     context.stroke();
-    
+
     // Draw second circle
     context.beginPath();
     context.arc(300, 50, 40, 0, 2*Math.PI);
     context.fill();
     context.stroke();
-    
+
     // fill the in the color of the rectangle
     context.fillStyle = "black";
-    // draw the rectangle 
+    // draw the rectangle
     context.fillRect(90,40,170,20);
     //draw font in black
     context.fillStyle = "white";
     context.font = 'bold 15pt Segoe Print';
     context.fillText('Baymax', 130, 55);
-    
+
   }
-  
+
   function login_validate(){
     //alert("in login_validate()");
     /* error_login : display field */
     var username_login = document.getElementById("username").value;
     var password_login = document.getElementById("password").value;
     var varlidator = new Input_Validator();
-    
+
     if (varlidator.validate_email(username_login, "error_login")) {
       if (varlidator.validate_passwords(password_login, "error_login")) {
         //document.getElementById("error_login").innerHTML = "OK";
