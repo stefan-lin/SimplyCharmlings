@@ -1,0 +1,460 @@
+<?xml version = "1.0">
+<!--This is a comment-->
+
+<product_list>
+
+	<product_id>
+		<name> Birthday Cupcake </name>
+		<image> birthdayCupcake.jpg </image>
+		<price> $5.00 </price>
+		<description> This fun birthday cupcake charmling is about 1.7 inches tall and is hand sculpted from polymer clay. It is fixed with an eye screw and lobster clamp.
+		</description>
+	</product_id>
+
+
+	<product_id>
+		<name> Molang </name>
+		<image> Molang.jpg </image>
+		<price> $5.00 </price>
+		<description> This Molang charmling is about 0.6 inch tall and is hand sculpted from polymer clay. It is fixed with an eye screw and lobster clamp.
+		 </description>
+	</product_id>
+
+
+	<product_id>
+		<name> Macaron Figurine </name>
+		<image> MacaronFigurine.jpg </image>
+		<price> $5.00 </price>
+		<description> This floral macaron figurine is about 1.5 inches in diameter. It is hand sculpted from polymer clay.
+		 </description>
+	</product_id>
+
+
+	<product_id>
+		<name> Smarty Pants Molang </name>
+		<image> SmartyPantsMolang.jpg </image>
+		<price> $5.00 </price>
+		<description> This Molang character charmling is about 0.8 inch tall. It is sculpted from polymer clay and is fixed with an eye screw and lobster clamp.
+		 </description>
+	</product_id>
+
+
+	<product_id>
+		<name> Ebi Sushi </name>
+		<image> EbiSushi.jpg <image>
+		<price> $5.00 </price>
+		<description> This tiny ebi  sushi charmling is about 0.5 inch in length and is hand sculpted from polymer clay. Acrylic paint is used to paint on the details.
+			 It is coated with varnish to protect paint finishings. An eye screw and lobster clamp is fix to the charm for hanging.
+    </description>
+	</product_id>
+
+
+	<product_id>
+			<name> Mint Ice Cream Magnet </name>
+			<image> mintIceCream.jpg </image>
+			<price> $5.00 </price>
+			<description> This mint ice cream is hand sculpted from polymer clay. A magnet is fix to the back of the sculpture. It is about 1 inch in diameter.
+			</description>
+	</product_id>
+
+
+	<product_id>
+			<name> Strawberry Ice Cream Magnet </name>
+			<image> strawberryIceCream.jpg </image>
+			<price> $5.00 </price>
+			<description> This strawberry ice cream is hand sculpted from polymer clay and is about 1 inch in diameter. A magnet is attached to the back of this sculpture.
+			</description>
+	</product_id>
+
+
+	<product_id>
+			<name> Ariel and Flounder </name>
+			<image> ArielAndFlounder.jpg </image>
+			<price> $5.00 </price>
+			<description> This listing is for an Ariel and Flounder charmling. They are hand sculpted using polymer clay. Ariel is 1 inch in length and Flounder is about 0.5 inch in length. Each are fixed with an eye screw and lobster clamp.
+			</description>
+	</product_id>
+
+
+	<product_id>
+			<name> Pastel Blue Hair Girl </name>
+			<image> PastelBlueHairGirl.jpg </image>
+			<price> $5.00 </price>
+			<description> This pastel blue hair girl charmling is hand sculpted with polymer clay. It is about 1.5 inch in length and is fixed with an eye screw and lobster clamp
+			</description>
+	</product_id>
+
+
+		<product_id>
+				<name> Flower Girl </name>
+				<image> flowerGirl.jpg </image>
+				<price> $5.00 </price>
+				<description> This flower girl charmling is about 1.5 inch tall and is hand sculpted from polymer clay. It is fixed with an eye screw and lobster clamp.
+				</description>
+		</product_id>
+
+
+			<product_id>
+					<name> Girl with Crown </name>
+					<image> GirlWithCrown.jpg </image>
+					<price> $5.00 </price>
+					<description> This princess charmling is about 1.8 inches tall. It is hand sculpted from polymer clay and is fixed with an eye screw and lobster clamp.
+					</description>
+			</product_id>
+
+
+				<product_id>
+						<name> Fawn Girl </name>
+						<image> FawnGirl.jpg </image>
+						<price> $5.00 </price>
+						<description> This fawn girl charmling is about 1.8 inches tall. It is hand sculpted from polymer clay and is fixed with an eye screw and lobster clamp.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Sailor Moon </name>
+						<image> SailorMoon.jpg </image>
+						<price> $5.00 </price>
+						<description> This Sailor Moon charmling is handsculpted with polymer clay. She stands about 1.5 inches tall and is fixed with an eye screw and lobster clamp
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Donald Duck Tsum Tsum </name>
+						<image> DonaldDuck.jpg </image>
+						<price> $5.00 </price>
+						<description> This Donald Duck Tsum Tsum charmling is hand sculpted with polymer clay. He is about 1.7 inches and is fixed with an eye screw and lobster clamp
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Cotton Candy </name>
+						<image> CottonCandy.jpg </image>
+						<price> $5.00 </price>
+						<description> This cotton candy charmling is hand sculpted using polymer clay. It is fixed with an eye screw and lobster clamp
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Dumbo Octopus </name>
+						<image> DumboOctopus.jpg </image>
+						<price> $5.00 </price>
+						<description> These adorable dumbo octopus charmlings are hand sculpted with polymer clay and they glow in the dark! They are fixed with an eye screw and lobster clamps.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Sea Bunny </name>
+						<image> SeaBunny.jpg </image>
+						<price> $5.00 </price>
+						<description> This sea bunny is hand sculpted using polymer clay and details are painted on with acrylic paint. It is coated with varnish to protect paint finishing. An eye screw and lobster clamp are fixed onto the charm.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Boba Cupcake </name>
+						<image> BobaCupcake.jpg </image>
+						<price> $5.00 </price>
+						<description> This cute boba cupcake charmling is about 1 inch tall and is hand sculpted with polymer clay. The boba is sealed with glazed for the shiny effect. This piece is also fixed with an eye screw and lobster clamp.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Sunfish </name>
+						<image> Sunfish.jpg </image>
+						<price> $5.00 </price>
+						<description> This sunfish is about 1 inch in diameter. It is hand sculpted using polymer clay and a magnet is fixed to the back. It is perfect for your fridge, white board, or anywhere you like to attach it to.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Mr.Poop and Toilet Paper </name>
+						<image> PoopAndToiletPaper.jpg </image>
+						<price> $5.00 </price>
+						<description> These two besties are hand sculpted using polymer clay. Each one is fixed with an eye screw and lobster clamp.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> SprinklesCupcake </name>
+						<image> SprinklesCupcake.jpg </image>
+						<price> $5.00 </price>
+						<description> This fun pink frosting cupcake charmling with sprinkles is hand sculpted using polymer clay. It is fixed with an eye screw and lobster clamp
+						</description>
+				</product_id>
+
+
+				<product_id>
+					<name> Molang in Costumes </name>
+					<image> MolangCostumes.jpg </image>
+					<price> $5.00 </price>
+					<description> These Molang characters are sculpted using polymer clay and are hand painted with acrylic paint. They are coated with varnish to protect the paint finish. Each one is fixed with an eye screw and lobster clamp. Please select with character you would like to purchase before checking out.
+ 										A. Pink Molang, B. Strawberry Molang, C. Bee Molang.
+									</description>
+				</product_id>
+
+				<product_id>
+						<name> Nude Fairy </name>
+						<image> NudeFairy.jpg </image>
+						<price> $5.00 </price>
+						<description> This nude fairy charmling with pastel pink hair is scuplted using polymer clay and is fixed with an eye screw and beautiful wings.
+						</description>
+				</product_id>
+
+
+			<product_id>
+					<name> Molang Cupcake </name>
+					<image> MolangCupcake.jpg </image>
+					<price> $5.00 </price>
+					<description> This cute Molang cupcake is sculpted using polymer clay and is fixed with an eye screw and lobster clamp.
+					</description>
+			</product_id>
+
+				<product_id>
+						<name> Flower Earrings </name>
+						<image> </image>
+						<price> $5.50 </price>
+						<description> These pastel pink flower earrings is sculpted using polymer clay and is fixed with metal studs.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Molang Earrings </name>
+						<image> MolangEarrings.jpg </image>
+						<price> $5.50 </price>
+						<description> These adorable Molang earrings is sculpted using polymer clay and is fixed with metal studs.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Cat Cupcake </name>
+						<image> CatCupcake.jpg </image>
+						<price> $5.00 </price>
+						<description> This cute cat cupcake is sculpted using polymer clay and was inspired from the meowmaid design.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Chubby Bee </name>
+						<image> ChubbyBee.jpg </image>
+						<price> $5.00 </price>
+						<description> This adorable yellow chubby bee charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Bear Bobas </name>
+						<image> BearBoba.jpg </image>
+						<price> $5.00 </price>
+						<description> These sticky bear boba trio charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Dumpling </name>
+						<image> Dumpling.jpg </image>
+						<price> $5.00 </price>
+						<description> This delicious dumpling is sculpted with polymer clay and is has a plastic ornament ball surrounding the dumpbling.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Girl with Lion Costome </name>
+						<image> GirlLion.jpg </image>
+						<price> $5.00 </price>
+						<description> This cute girl figurine is wearing a lion costume that represents the Lunar New Year holiday.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Christmas Tree </name>
+						<image> ChristmasTree.jpg </image>
+						<price> $5.00 </price>
+						<description> This happy Christmas tree is sculpted using polymer clay and is decorated with cute ornaments.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Reindeer </name>
+						<image> Reindeer.jpg </image>
+						<price> $5.00 </price>
+						<description> This cheerful reindeer charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Snow Bunny </name>
+						<image> SnowBunny.jpg </image>
+						<price> $5.00 </price>
+						<description> This chubby snow bunny charmling is sculpted using polymer clay and is decorated with glitter. It is also fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Lemon Bear Doughnut </name>
+						<image> LemonBear.jpg </image>
+						<price> $5.00 </price>
+						<description> This delicious lemon bear doughnut is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Vileplume </name>
+						<image> Vileplume.jpg </image>
+						<price> $5.00 </price>
+						<description> This cute chubby Vileplume pokemon is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Bear Ice Cream </name>
+						<image> BearIceCream.jpg </image>
+						<price> $5.00 </price>
+						<description> This adorable ice cream bear charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Present </name>
+						<image> Present.jpg </image>
+						<price> $5.00 </price>
+						<description> This cute bow present box charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Bear Cupcake </name>
+						<image> BearCupcake.jpg </image>
+						<price> $5.00 </price>
+						<description> This delicious cute cupcake bear charmlings comes in two colors, blue and pink. They are sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Caterpillar </name>
+						<image> Caterpillar.jpg </image>
+						<price> $5.00 </price>
+						<description> This cute pink chubby caterpillar charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Toasted Cupcake </name>
+						<image> ToastedCupcake.jpg </image>
+						<price> $5.00 </price>
+						<description> This cute toasted cupcake charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Cat Girl Doughnut </name>
+						<image> CatGirl.jpg </image>
+						<price> $5.00 </price>
+						<description> This adorble girl is dressed in a pusheen cat costume and is holding a yummy doughnut. It is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Bear Popsicle </name>
+						<image> BearPopsicle.jpg </image>
+						<price> $5.00 </price>
+						<description> These delicious bear popsicle charmlings are sculpted using polymer clay and are painted at the bottom. They are also fixed with an eye screw.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Croissant Sandwich </name>
+						<image> Croissant.jpg </image>
+						<price> $5.00 </price>
+						<description> This delicious croissant sandwich charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id
+
+				<product_id>
+						<name> Boy </name>
+						<image> Boy.jpg </image>
+						<price> $5.00 </price>
+						<description> This adorable boy charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Elephant </name>
+						<image> Elephant.jpg </image>
+						<price> $5.00 </price>
+						<description> This cute gray elephant charmling is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Witch </name>
+						<image> Witch.jpg </image>
+						<price> $5.00 </price>
+						<description> This cute halloween witch is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Flower Fairy </name>
+						<image> FlowerFairy.jpg </image>
+						<price> $5.00 </price>
+						<description> This mystical fairy charmling has pink flowers in her hair and is sculpted using polymer clay, It is also fixed with an eye screw.
+						</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Chocolate Chip Cookie </name>
+						<image> Cookie.jpg </image>
+						<price> $5.00 </price>
+						<description> These delcious chocolate chip cookies are sculpted using polymer clay and are fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Milk Tea </name>
+						<image> MilkTea.jpg </image>
+						<price> $5.00 </price>
+						<description> This silly milk tea charmling with boba is sculpted using polymer clay and is fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Doughnuts </name>
+						<image> Doughnuts.jpg </image>
+						<price> $5.00 </price>
+						<description> These yummy assorted doughnuts are sculpted using polymer clay.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Shooting Star </name>
+						<image> ShootingStar.jpg </image>
+						<price> $5.00 </price>
+						<description> These cute shooting star charmlings are sculpted using polymer clay and are decorated with sparkling gems. They are also fixed with an eye screw.
+						</description>
+				</product_id>
+
+				<product_id>
+						<name> Candy </name>
+						<image> Candy.jpg </image>
+						<price> $5.00 </price>
+						<description> These yummy candy jars are sculpted using polymer clay and decorated with gems. They come in two pink and red colors and are fixed with an eye screw.
+						</description>
+				</product_id>
+
+
+
+</product_list>
