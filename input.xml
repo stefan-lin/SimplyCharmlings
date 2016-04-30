@@ -103,12 +103,12 @@
 
 
 				<product_id>
-						<name> Flower Girl </name>
-						<category> People </category>
-						<color> green </color>
-						<image> flowerGirl.jpg </image>
+						<name> Bear Pancake </name>
+						<category> Food </category>
+						<color> brown </color>
+						<image> BearPankcake.jpg </image>
 						<price> $5.00 </price>
-						<description> This flower girl charmling is about 1.5 inch tall and is hand sculpted from polymer clay. It is fixed with an eye screw and lobster clamp.
+						<description> This delicious bear pancake is hand sculpted from polymer clay and is fixed with an eye screw.
 						</description>
 				</product_id>
 
@@ -554,6 +554,16 @@
 						<image> Candy.jpg </image>
 						<price> $5.00 </price>
 						<description> These yummy candy jars are sculpted using polymer clay and decorated with gems. They come in two pink and red colors and are fixed with an eye screw.</description>
+				</product_id>
+
+
+				<product_id>
+						<name> Flower girl </name>
+						<category> People </category>
+						<color> green </color>
+						<image> flowerGirl.jpg </image>
+						<price> $5.00 </price>
+						<description> This flower girl charmling is about 1.5 inch tall and is hand sculpted from polymer clay. It is fixed with an eye screw and lobster clamp </description>
 				</product_id>
 
 
