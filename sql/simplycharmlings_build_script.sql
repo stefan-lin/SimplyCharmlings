@@ -101,12 +101,12 @@ VALUES
   (null, 'fred_white@gmail.com',     'Fred',    'White', 'e67f29122e4913ad7ca3e0c49d25d9a01c839577e1f9633e4e08def6bedae75a', '1290a3a92ceaeb4d11f4041eb8e9bd55c52df0c3803ca3b676e7a9a5ad14ef8f'),
   (null, 'honey.lemon@gmail.com',    'Honey',   'Lemon', 'e17622ad4314bb57480296ecc80de5166b0459b6260cae7c80516f755b3c38a9', 'afd5ddda71a1ef479b0cccccce7c8b7c7783f83d8c3f32af81c85918b7df5c51');
 --------------------------------------------------------------------------
----"1hg2%aY345"
+/*---"1hg2%aY345"
 ---"Z%99nabc"
----'Npr$Q123'
+---"Npr$Q123"
 ---"836hNbg%K"
 ---"R76%hk95V"
-
+*/
 CREATE TABLE Phone(
   phone_id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   phone_str VARCHAR(20) NOT NULL
@@ -375,6 +375,7 @@ CREATE TABLE Review(
   FOREIGN KEY(product_id) REFERENCES Product(product_id)
 );
 -------------------- INSERT TO TABLE Review -----------------------------
+/*
 --INSERT INTO Review
 --  (review_id, review_rate, review_text, usr_id, product_id)
 --VALUES
@@ -397,3 +398,4 @@ CREATE TABLE Transaction(
 -------------------- INSERT TO TABLE Transaction ------------------------
 
 --------------------------------------------------------------------------
+*/
