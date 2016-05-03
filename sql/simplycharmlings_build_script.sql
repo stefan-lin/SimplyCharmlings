@@ -7,7 +7,6 @@ CREATE TABLE Category(
   category_name VARCHAR(30)
 );
 
--------------------- INSERT TO TABLE Category ----------------------------
 INSERT INTO Category
   (category_id, category_name)
 VALUES
@@ -17,13 +16,11 @@ VALUES
   (4, 'People'),
   (5, 'Earrings'),
   (6, 'Random Items');
---------------------------------------------------------------------------
 
 CREATE TABLE Image(
   image_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   url VARCHAR(2083)
 );
--------------------- INSERT TO TABLE Image -------------------------------
 INSERT INTO Image
   (image_id, url)
 VALUES
@@ -81,7 +78,6 @@ VALUES
   (null, 'images/products_img/ToastedCupcake.jpg'),
   (null, 'images/products_img/Vilaplume.jpg'),
   (null, 'images/products_img/Witch.jpg');
---------------------------------------------------------------------------
 
 CREATE TABLE User(
   usr_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -91,7 +87,6 @@ CREATE TABLE User(
   salt CHAR(64) NOT NULL,
   password CHAR(64) NOT NULL
 );
--------------------- INSERT TO TABLE User --------------------------------
 INSERT INTO User
   (usr_id, email, first_name, last_name, salt, password)
 VALUES
@@ -100,7 +95,7 @@ VALUES
   (null, 'tadashi.hamada@gmail.com', 'Tadashi', 'Hamada', 'ed28920d977e3551b5fd86f1f882cbe9bd07362774c0604e6197c5acc4e8e839', '15911d77895852d9123116bddc615792899f3a038a848fa77aa6153b78f7fc0e'),
   (null, 'fred_white@gmail.com',     'Fred',    'White', 'e67f29122e4913ad7ca3e0c49d25d9a01c839577e1f9633e4e08def6bedae75a', '1290a3a92ceaeb4d11f4041eb8e9bd55c52df0c3803ca3b676e7a9a5ad14ef8f'),
   (null, 'honey.lemon@gmail.com',    'Honey',   'Lemon', 'e17622ad4314bb57480296ecc80de5166b0459b6260cae7c80516f755b3c38a9', 'afd5ddda71a1ef479b0cccccce7c8b7c7783f83d8c3f32af81c85918b7df5c51');
---------------------------------------------------------------------------
+
 /*---"1hg2%aY345"
 ---"Z%99nabc"
 ---"Npr$Q123"
@@ -111,7 +106,6 @@ CREATE TABLE Phone(
   phone_id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   phone_str VARCHAR(20) NOT NULL
 );
--------------------- INSERT TO TABLE Phone -------------------------------
 INSERT INTO Phone
   (phone_id, phone_str)
 VALUES
@@ -120,13 +114,11 @@ VALUES
   (null, '(408)123-0016'),
   (null, '(408)123-0017'),
   (null, '(408)123-0018');
---------------------------------------------------------------------------
 
 CREATE TABLE Address(
   address_id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   addr_str VARCHAR(100) NOT NULL
 );
--------------------- INSERT TO TABLE Address -----------------------------
 INSERT INTO Address
   (address_id, addr_str)
 VALUES
@@ -135,7 +127,6 @@ VALUES
   (null, 'temp address'),
   (null, 'temp address'),
   (null, 'temp address');
---------------------------------------------------------------------------
 
 CREATE TABLE Payment_method(
   payment_id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -143,7 +134,6 @@ CREATE TABLE Payment_method(
   payment_number VARCHAR(20) NOT NULL,
   payment_expiration_date VARCHAR(5) NOT NULL
 );
--------------------- INSERT TO TABLE Payment_method ----------------------
 INSERT INTO Payment_method
   (payment_id, payment_type, payment_number, payment_expiration_date)
 VALUES
@@ -152,12 +142,10 @@ VALUES
   (null, 3, 123456787654321, '07/19'),
   (null, 3, 123456787654321, '07/19'),
   (null, 3, 123456787654321, '07/19');
---------------------------------------------------------------------------
 CREATE TABLE Color(
   color_id INT(2) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   color_name VARCHAR(10) NOT NULL
 );
--------------------- INSERT TO TABLE Product ----------------------------
 INSERT INTO Color
   (color_id, color_name)
 VALUES
@@ -171,7 +159,6 @@ VALUES
   (8, 'Orange'),
   (9, 'Red'),
   (10, 'Black');
---------------------------------------------------------------------------
 
 CREATE TABLE Product(
   product_id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -183,7 +170,6 @@ CREATE TABLE Product(
   FOREIGN KEY(category_id) REFERENCES Category(category_id),
   FOREIGN KEY(color_id) REFERENCES Color(color_id)
 );
--------------------- INSERT TO TABLE Product ----------------------------
 INSERT INTO Product
   (product_id, product_name, category_id, price, description, color_id)
 VALUES
@@ -241,7 +227,7 @@ VALUES
   (null, 'Toasted Cupcake', 1, 5.00, 'This cute toasted cupcake charmling is sculpted using polymer clay and is fixed with an eye screw.', 1),
   (null, 'Vileplume', 2, 5.00, 'This cute chubby Vileplume pokemon is sculpted using polymer clay and is fixed with an eye screw.', 5),
   (null, 'Witch', 4, 5.00, 'This cute halloween witch is sculpted using polymer clay and is fixed with an eye screw.', 3);
---------------------------------------------------------------------------
+
 
 CREATE TABLE Product_Image(
   product_id INT(10) UNSIGNED NOT NULL,
@@ -250,7 +236,6 @@ CREATE TABLE Product_Image(
   FOREIGN KEY(product_id) REFERENCES Product(product_id),
   FOREIGN KEY(image_id) REFERENCES Image(image_id)
 );
--------------------- INSERT TO TABLE Product_Image ----------------------
 INSERT INTO Product_Image
   (product_id, image_id)
 VALUES
@@ -308,7 +293,7 @@ VALUES
   (52, 52),
   (53, 53),
   (54, 54);
---------------------------------------------------------------------------
+
 
 CREATE TABLE User_Payment(
   usr_id INT(6) UNSIGNED NOT NULL,
@@ -317,7 +302,6 @@ CREATE TABLE User_Payment(
   FOREIGN KEY(usr_id) REFERENCES User(usr_id),
   FOREIGN KEY(payment_id) REFERENCES Payment_method(payment_id)
 );
--------------------- INSERT TO TABLE User_Payment -----------------------
 INSERT INTO User_Payment
   (usr_id, payment_id)
 VALUES
@@ -326,7 +310,7 @@ VALUES
   (3, 3),
   (4, 4),
   (5, 5);
---------------------------------------------------------------------------
+
 
 CREATE TABLE User_Address(
   usr_id INT(6) UNSIGNED NOT NULL,
@@ -335,7 +319,6 @@ CREATE TABLE User_Address(
   FOREIGN KEY(usr_id) REFERENCES User(usr_id),
   FOREIGN KEY(addr_id) REFERENCES Address(address_id)
 );
--------------------- INSERT TO TABLE User_Address -----------------------
 INSERT INTO User_Address
   (usr_id, addr_id)
 VALUES
@@ -344,7 +327,7 @@ VALUES
   (3, 3),
   (4, 4),
   (5, 5);
---------------------------------------------------------------------------
+
 
 CREATE TABLE User_Phone(
   usr_id INT(6) UNSIGNED NOT NULL,
@@ -353,7 +336,6 @@ CREATE TABLE User_Phone(
   FOREIGN KEY(usr_id) REFERENCES User(usr_id),
   FOREIGN KEY(phone_id) REFERENCES Phone(phone_id)
 );
--------------------- INSERT TO TABLE User_Phone -------------------------
 INSERT INTO User_Phone
   (usr_id, phone_id)
 VALUES
@@ -362,7 +344,7 @@ VALUES
   (3, 3),
   (4, 4),
   (5, 5);
---------------------------------------------------------------------------
+
 
 CREATE TABLE Review(
   review_id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -374,7 +356,6 @@ CREATE TABLE Review(
   FOREIGN KEY(usr_id) REFERENCES User(usr_id),
   FOREIGN KEY(product_id) REFERENCES Product(product_id)
 );
--------------------- INSERT TO TABLE Review -----------------------------
 /*
 --INSERT INTO Review
 --  (review_id, review_rate, review_text, usr_id, product_id)
