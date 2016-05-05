@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Date Picker</title>
+  
+  <meta charset="utf-8">
+  <meta name = "title" content = "SimplyCharmlings | Handmade clay charms | Arts and Crafts">
+  <meta name = "description" content = "SimplyCharmlings. Handmade clay keychains. Adorable charms that make great gifts.">
+  <meta name = "keywords" content = "date picker, SimplyCharmlings">
+  <meta name = "robots" content = "index, follow">
+  <meta name = "author" content = "Baymax Developers">
+  
+  <link rel="stylesheet" href="style.css" media="all">
+  <script src="./js/jquery-1.12.3.min.js"></script>
+  <script src="./js/jquery-ui-1.11.4/jquery-ui.js"></script>
+
+  <style type="text/css">
+    h1 {
+      text-align: center;
+    }
+    
+    #selectable .ui-selecting {
+      background-color: gray;
+    }
+    
+    #selectable .ui-selected {
+      background-color: black;
+      color: white;
+    }
+  </style>
+
+  <script type="text/javascript">
+    $(init);
+
+    function init() {
+      $("h1").addclass("ui-widget-header");
+      $("#tabs").tabs();
+      $(#datePicker ").datepicker();
+        $("#slider").slider().bind("slide", reportSlider); $("#selectable").selectable(); $("#sortable").sortable(); $("#dialog").dialog();
+      }
+  </script>
+</head>
+
+<body>
+  <p>Date:
+    <input type="text" id="datepicker">
+  </p>
+
+</html>

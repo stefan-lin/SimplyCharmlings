@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--<link rel="stylesheet" type="text/css" media="all" href="style.css">-->
+  <title>SimplyCharmlings Sign Up</title>
+  <!-- META ELEMENTS -->
+  <meta id="meta_referrer" content="origin-when-crossorigin" name="referrer">
+  <meta content="SimplyCharmlings" property="og:site_name">
+  <meta content="localhost" property="og:og:url">
+  <meta content="localhost/images/logo.jpg" property="og:image">
+  <meta content="en_US" property="og:locale">
+  <meta content="Create an account or log into Simply Charmlings. \
+                 Shopping for cool delicate key chains, drawings, \
+                 and idols." name="description">
+  <meta content="noodp, noydir" name="robots">
+  
+  <meta name = "title" content = "Simplycharmlings | Handmade clay charms | Arts and Crafts">
+  <meta name = "description" content = "Simplycharmlings. Handmade clay keychains. Adorable charms that make great gifts.">
+  <meta name = "keywords" content = "Simplycharmlings, handmade, clay, keychains, charms, art, sculpt, crafts, kawaii, polymerclay">
+  <meta name = "robots" content = "index, follow">
+  <meta name = "author" content = "Baymax Developers">
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="input_validate.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+</head>
+<body>
+
+<div class="header" style="display: block;"> <img src="images/logo.jpg">
+  <div class="left">
+    <ul>
+      <li><a href=""><span class="headermenutext">Home</span></a></li>
+      <li><a href="index.html"><span class="headermenutext">Search</span></a></li>
+      <li><a href=""><span class="headermenutext">Product</span></a></li>
+      <li><a href=""><span class="headermenutext">Log In</span></a></li>
+    </ul>
+  </div>
+
+  <div class="right">
+    <ul>
+      <li><a href=""><span class="leftmenutext">Facebook</span></a></li>
+      <li><a href=""><span class="leftmenutext">Twitter</span></a></li>
+      <li><a href=""><span class="leftmenutext">Instagram</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="banner" style="display: block;">
+  <div id="banner"> <img src="images/banner.jpg"> </div>
+</div>
+
+
+<div class="white" style="display: block;">
+  <h1>New User</h1>
+<div class="main">
+  <div class="registration-content">
+    <div class="left-registration">
+      <h2>
+        Purchasing cute charmlings and
+        <br \>
+        share with your friends!
+      </h2>
+      <div class="reg-des">
+        <div class="des-img">
+          <img src="icons/currency.png">
+        </div>
+        <div class="des-text">
+          <span class="text-content">Accept multiple payment methods</span>
+        </div>
+      </div>
+      <div class="reg-des">
+        <div class="des-img">
+          <img src="icons/assistant.png">
+        </div>
+        <div class="des-text">
+          <span class="text-content">Fast helpful response</span>
+        </div>
+      </div>
+      <div class="reg-des">
+        <div class="des-img">
+          <img src="icons/Gears-48.png">
+        </div>
+        <div class="des-text">
+          <span class="text-content">Share and connect with your friends</span>
+        </div>
+      </div>
+      <div class="reg-des">
+        <div class="des-img">
+          <img src="icons/Privacy-48.png">
+        </div>
+        <div class="des-text">
+          <span class="text-content">Ultra security protection for your information</span>
+        </div>
+      </div>
+      <div class="reg-des">
+        <div class="des-img">
+          <img src="icons/Module-48.png">
+        </div>
+        <div class="des-text">
+          <span class="text-content">Excellent collection</span>
+        </div>
+      </div>
+    </div>  
+    <div class="right-registration">
+      <h2>Sign Up</h2>
+      <div class="short-sign-up-des">to get all promotions</div>
+      <div class="sign-up-form">
+        <div>
+          <!--<form action="regstration.php" -->
+          <form action=""
+                method="post"
+                name="reg"
+                accept-charset="utf-8"
+                id="reg-form"
+                onsubmit="return signup_validate();">
+            <table role="presentation" cellspacing="0">
+            <tbody>
+              <tr>
+                <td><input style="width:100%" type="text" name="reg_first_name" id="reg_first_name" maxlength="50" placeholder="First Name"></td>
+                <td><input  style="width:100%" type="text" name="reg_last_name" id="reg_last_name" maxlength="50" placeholder="Last Name"></td>
+                <td class="error_reg"><p id="error_name_reg"></p></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input style="width:100%" type="text" name="reg_email" id="reg_email" maxlength="120" placeholder="Email"></td>
+                <td class="error_reg"><p id="error_email_reg"></p></td>
+              </tr>
+              <!--<tr>
+                <td colspan="2"><input style="width:100%" type="text" name="reg_confirm_email" id="reg_confirm_email" maxlength="120" placeholder="Re-enter Email"></td>
+                <td class="error_reg"><p id="error_email_conf_reg"></p></td>
+              </tr>-->
+              <tr>
+                <td colspan="2"><input style="width:100%" type="text" name="reg_password" id="reg_password" maxlength="50" placeholder="New Password"></td>
+                <td class="error_reg"><p id="error_password_reg"></p></td>
+              </tr>
+              <tr><td colspan="2"><span style="font-weight:bold; font-size=14px">Birthday</span></td></tr>
+              <tr>
+                <td>
+                <span>
+                  <select style="width:100%" id="month" class="bday" aria-label="Month" name="bday_month" title="Month">
+                    <option value="0" selected="1">Month</option>
+                    <option value="1">Jan</option>
+                    <option value="2">Feb</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Apr</option>
+                    <option value="5">May</option>
+                    <option value="6">Jun</option>
+                    <option value="7">Jul</option>
+                    <option value="8">Aug</option>
+                    <option value="9">Sep</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dec</option>
+                  </select>
+                  <!--<select id="year" class="bday" aria-label="Year" name="bday_year" title="Year"></select>-->
+                </span>
+                </td>
+                <td><span><select style="width:100%" id="day" class="bday" aria-label="Day" name="bday_day" title="Day">
+                    <option value="0" selected="1">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select></span></td>
+                <td class="error_reg"><p id="error_bday_reg"></p></td>
+              </tr>
+              <tr>
+                <td><span>
+                  <input type="checkbox" id="gender_f" name="gender" value="1">
+                  <label class="reg-gender">Female</label>
+                </span></td>
+                <td><span>
+                  <input type="checkbox" id="gender_m" name="gender" value="2">
+                  <label class="reg-gender">Male</label>
+                </span></td>
+                <td class="error_reg"><p id="error_gender_reg"></p></td>
+              </tr>
+              <tr>
+                <td colspan="2"><div class="clearfix">
+                  <button style="width:100%" id="reg-submit-button" class="button-reg-submit" type="submit" name="submit-web-reg">Sign Up</button>
+                  </div></td>
+              </tr>
+            </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript">
+  function signup_validate(){    
+    var validator = new Input_Validator();
+    /* grabing user inputs s
+    var usr_fname = document.getElementById("reg_first_name").value;
+    var usr_lname = document.getElementById("reg_last_name").value;
+    var usr_email = document.getElementById("reg_email").value;
+    var usr_confirm_email = document.getElementById("reg_confirm_email").value;
+    var usr_passw = document.getElementById("reg_password").value;
+    var usr_bday_month = document.getElementById("month").value;
+    var usr_bday_day = document.getElementById("day").value;
+    var usr_female = document.getElementById("gender_f");
+    var usr_male = document.getElementById("gender_m");
+    var usr_gender = -1;
+    
+    if (validator.validate_name(usr_fname, "error_name_reg") &&
+       validator.validate_name(usr_lname, "error_name_reg") &&
+       validator.validate_email(usr_email, "error_email_reg") &&
+       validator.validate_birthday(usr_bday_month, usr_bday_day, "error_bday_reg") &&
+       validator.validate_gender("gender_f", "gender_m", "error_gender_reg") &&
+       validator.validate_passwords(usr_passw, "error_password_reg")) {
+      alert("Validation passed!");
+      return false;
+    } else {
+      return false;
+    }
+  } // END FUNCTION signup_validate()
+  </script>
+
+
+<div class="copyright" style="display: block;">
+  <p class="baymax">© Copyright 2016 CS174 Baymax All Rights Reserved.</p>
+</div>
+
+</div>
+</body>
+</html>
