@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+  <title>Simply Charmlings</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style/style_stef.css" media="all" />
+  <link rel="stylesheet" href="style.css" media="all" />
+  <!-- Latest compiled and minified CSS -->
+  <link
+    rel="stylesheet"
+    href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+  </script>
+  <!-- Latest compiled JavaScript -->
+  <script
+    src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
+  <script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+<!-- .button-add-to-cart background: url("add2cart.png") no-repeat scroll 0 0 transparent; -->
+<script type="text/javascript">
+$(document).ready(function(){
+  // Fixa navbar
+  var navbar = $('#nav-main'),
+      distance = navbar.offset().top,
+      $window = $(window);
+
+  $window.scroll(function() {
+      if ($window.scrollTop() >= distance) {
+          navbar.removeClass('navbar-fixed-top')
+                .addClass('navbar-fixed-top');
+          $("body").css("padding-top", "70px");
+      } else {
+          navbar.removeClass('navbar-fixed-top');
+          $("body").css("padding-top", "0px");
+      }
+  });
+
+  $('.navbar-header').mouseover(function(){
+    $(this).children('a').css("color", "#ff9999");
+  });
+  $('.navbar-header').mouseout(function(){
+    $(this).children('a').css("color", "#ffbf80");
+  });
+});
+</script>
+<nav id="nav-main" class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div style="float:left; display:inline-block;">
+    <div class="navbar-header navbar-nav" style="padding-left: 30px;">
+      <a class="navbar-brand" href="index.html" style="color: #ffbf80;">SimplyCharmlings</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="products.html">Product</a></li>
+      <li><a href="">Log In</a></li>
+    </ul>
+    </div>
+    <div style="float:right; display:inline-block;">
+    <ul class="nav navbar-nav nav-right">
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle"
+           data-toggle="dropdown"
+           href="#">Follow Us<span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </li>
+      <!-- TODO: fix history button -->
+      <li><a href="history.html">History</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<div class="banner" style="display: block;">
+  <div id="banner"> <img src="images/banner.jpg"> </div>
+</div>
+
+<div class="about" style="display: block;">
+  <h1>About Simply Charmlings</h1>
+  <p class="description">Simply Charmlings brings to you handcrafted polymer clay charmlings that are waiting to be adopted. Hang them on your bracelet, necklace, bags, or wherever, because they are content as long as they’re with you. Because of their handcrafted nature, each charmlings are unique and no two are alike. </p>
+</div>
+
+<div class="white" style="display: block;">
+  <h1>Baymax Developers</h1>
+  <div class="icon"> <img src="images/cromwell.jpg"> </div>
+  <h2>Cromwell Cutaran</h2>
+  <p class="bio">Hi, I'm an undergraduate student at SJSU pursuing a B.S. in Computer Science. This Spring semester marks my second semester at SJSU and I plan on graduating in the Fall of 2017. I'm set on  working as a software engineer in the technology industry and would love to play a part in developing new, interesting, and widely-used technologies. I listen to a lot of electronic music and like to play video games or go to the gym when I can spare the time.</p>
+</div>
+
+<div class="gray">
+  <div class="icon"> <img src="images/alex.jpg"> </div>
+  <h2>Alex Le</h2>
+  <p class="bio">I
+I am a 22 year old student who enjoys going on food adventures and milk tea runs. You can find me at school, genius bar, or at home napping. I thrive off of tv show mararthons and constantly snacking. I'm hoping to finish school within the next year, but I still don't have any clue what I would really like to do with my major just yet. I hope to one day move to Seattle, Washington because there is just something about it that I just really love. I also love dogs more than most people.</p>
+</div>
+
+<div class="white" style="display: block;">
+  <div class="icon"> <img src="images/ann.jpg"> </div>
+  <h2>Ann Le</h2>
+  <p class="bio">Hello! ^_^  I am an undergraduate student at San Jose State University currently in the process of completing a Bachelor of Science degree in Computer Science. I am always amazed by the technologies that have been created over the years and how it has impacted the world. I would love to part of the computer industry and to work at a tech company one day to help create new products. It is amazing what you can do with coding and how it can be used to help solve everyday problems that society faces. On my free time, I like to spend time with my family and friends and to try out new things and explore the new places.</p>
+</div>
+
+<div class="gray">
+  <div class="icon"> <img src="images/stefan.jpg"> </div>
+  <h2>Stefan Lin</h2>
+  <p class="bio">if people == 'rain':<br><br>&nbsp&nbspI = 'drizzle'<br><br>&nbsp&nbspShe = 'hrricane'</p>
+</div>
+
+<div class="white" style="display: block;">
+  <div class="icon"> <img src="images/kisha.jpg"> </div>
+  <h2>Kisha Rikhi</h2>
+  <p class="bio">I’m from Santa Clara, CA and I’m 24 years old. My favorite color is hot pink and I love chocolate ice cream. Everyday I go to school and go to work so I’m a busy person, but I find time to do my homework. I only have one sibling who is a year older than me and he works as an account manager and some tech company I’ve never heard of. My birthday was this week and I’m excited to party with my friends this weekend, except my best friend because she just moved to New York.</p>
+</div>
+
+<div class="copyright" style="display: block;">
+  <p class="baymax">© Copyright 2016 CS174 Baymax All Rights Reserved.</p>
+</div>
+
+</div>
+</body>
+</html>

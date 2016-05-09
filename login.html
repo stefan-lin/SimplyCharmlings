@@ -1,158 +1,342 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <!--<link rel="stylesheet" type="text/css" media="all" href="style.css">-->
-  <title>Simply Charmlings Log In or Sign Up</title>
-  <!-- META ELEMENTS -->
-  <meta id="meta_referrer" content="origin-when-crossorigin" name="referrer">
-  <meta content="SimplyCharmlings" property="og:site_name">
-  <meta content="localhost" property="og:og:url">
-  <meta content="localhost/images/logo.jpg" property="og:image">
-  <meta content="en_US" property="og:locale">
-  <meta content="Create an account or log into Simply Charmlings. \
+<title>Account</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<!-- SEO -->
+<meta id="meta_referrer" content="origin-when-crossorigin" name="referrer">
+<meta content="SimplyCharmlings" property="og:site_name">
+<meta content="localhost" property="og:og:url">
+<meta content="localhost/images/logo.jpg" property="og:image">
+<meta content="en_US" property="og:locale">
+<meta content="Create an account or log into Simply Charmlings. \
                  Shopping for cool delicate key chains, drawings, \
                  and idols." name="description">
-  <meta content="noodp, noydir" name="robots">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="input_validate.js"></script>
-<link rel="stylesheet" type="text/css" media="all" href="style.css">
+<meta content="noodp, noydir" name="robots">
+<meta name = "title" content = "Simplycharmlings | Handmade clay charms | Arts and Crafts">
+<meta name = "description" content = "Simplycharmlings. Handmade clay keychains. Adorable charms that make great gifts.">
+<meta name = "keywords" content = "login, Simplycharmlings, handmade, clay, keychains, charms, art, sculpt, crafts, kawaii, polymerclay">
+<meta name = "robots" content = "index, follow">
+<meta name = "author" content = "Baymax Developers">
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/stuck.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/script.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script>
+ $(document).ready(function(){
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+
+  });
+</script>
 </head>
-<body onload = "draw()">
 
-<div class="header" style="display: block;"> <img src="images/logo.jpg">
-  <div class="left">
-    <ul>
-      <li><a href=""><span class="headermenutext">Home</span></a></li>
-      <li><a href="index.html"><span class="headermenutext">Search</span></a></li>
-      <li><a href="product.html"><span class="headermenutext">Product</span></a></li>
-      <li><a href=""><span class="headermenutext">Log In</span></a></li>
-      <li><a href="signup.html"><span class="headermenutext">Join</span></a></li>
-    </ul>
-  </div>
+<body>
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <h1>
+          <a href="index.html">
+            <img src="images/logo.png" alt="Logo alt">
+          </a>
+        </h1>
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="index.html#cate">CATEGORIES</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li class="current"><a href="login.html">LOG IN</a></li>
+               <li><a href="cart.html">CART</a></li>
+               <li><a href="logout.php">X</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
 
-  <div class="right">
-    <ul>
-      <li><a href=""><span class="leftmenutext">Facebook</span></a></li>
-      <li><a href=""><span class="leftmenutext">Twitter</span></a></li>
-      <li><a href=""><span class="leftmenutext">Instagram</span></a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="banner" style="display: block;">
-  <div id="banner"> <img src="images/banner.jpg"> </div>
-</div>
+<!--=====================
+          Content
+======================-->
+<!--=====================
+  TODO: USE SECURE CONNECTION
+======================-->
+<section class="content ctn__1">
+<div class="container">
+  <div class="row">
+    <div class="grid_1"><p></p></div>
 
 
-<div class="white" style="display: block;">
-  <h1>User Log In</h1>
-      <div class="right-menubar">
-      <!--<form action="login.php"-->
-      <!--      method="post"-->
-      <form action="#"
-            method="post"
-            id="login_ofrm"
-            onsubmit="return login_validate();">
-        <table cellspacing="0" role="presentation">
-        <tbody>
-          <tr>
-            <td class="login-label">
-              <label for="email" style="text-transform: none">Email</label>
-            </td>
-            <td class="login-label">
-              <label for="password" style="text-transform: none">Password</label>
-            </td>
-          </tr>
-          <tr>
-            <td class="login-boxes">
-              <input type="text" name="username" id="username" maxlength="50" placeholder="Email"/>
-            </td>
-            <td class="login-boxes">
-              <input type="text" name="password" id="password" maxlength="50" placeholder="Password"/>
-            </td>
-            <td class="login-submit-button">
-              <input type="submit" name="submit" id="login-button" value="Log In" />
-            </td>
-            <td class="error_display" style="padding-left: 5px">
-              <p id="error_login"></p> <!-- ERROR FIELDS -->
-            </td>
-          </tr>
-          <tr>
-            <td><label style="text-transform: none">
-              <input type="checkbox" name="remember_account" id="remember_account" />
-              Remeber me
-            </label></td>
-            <td>
-              <a class="forget-password" href="">Forget your password?</a>
-            </td>
-          </tr>
-        </tbody>
-        </table>
+    <div class="grid_4">
+      <span><h2>New User</h2></span><br>
+      <form name="reg_form" id="form" action="reg.php" method="post" onsubmit="return reg_validation();">
+        <input name="fname" type="text" placeholder="First Name" width="50px"><br>
+        <p></br></p>
+        <input name="lname" type="text" placeholder="Last Name" width="50px"><br>
+        <p></br></p>
+        <input name="email" type="text" placeholder="Email" width="50px"><br>
+        <p></br></p>
+        <input name="password" type="text" placeholder="Password" width="50px"><br>
+        <p></br></p>
+        <input name="address" type="text" placeholder="Address" width="50px"><br>
+        <p></br></p>
+        <input name="phone" type="text" placeholder="Phone" width="50px"><br>
+        <div class="clear"></div>
+        <div class="btns">
+        <a id="reg-but" href="#" type="submit" class="btn">Register</a>
+        </div>
       </form>
+    </div>
 
 
-
-    <canvas id = "canvas" width = "500" height = "100">
-    </canvas>
+    <div class="grid_2"><p></p></div>
 
 
-  <script type = "text/javascript">
-  function draw()
-  {
-    var canvas = document.getElementById("canvas");
-    var context = canvas.getContext('2d');
+    <div class="grid_4">
+      <span><h2>Existing User</h2></span><br>
+      <form name="login_form" onsubmit="return login_validation();" id="form" action="login.php" method="post">
+        <input name="email" type="text" placeholder="Email" width="50px"><br>
+        <p></br></p>
+        <input name="password" type="text" placeholder="Password" width="50px"><br>
+        <div class="clear"></div>
+        <div class="btns">
+        <a id="login-but" href="#" type="submit" class="btn">Login</a>
+        </div>
+      </form>
+    </div>
 
-    // Draw first circle
-    context.beginPath();
-    context.arc(50, 50, 40, 0, 2*Math.PI);
-    context.fill();
-    context.stroke();
-
-    // Draw second circle
-    context.beginPath();
-    context.arc(300, 50, 40, 0, 2*Math.PI);
-    context.fill();
-    context.stroke();
-
-    // fill the in the color of the rectangle
-    context.fillStyle = "black";
-    // draw the rectangle
-    context.fillRect(90,40,170,20);
-    //draw font in black
-    context.fillStyle = "white";
-    context.font = 'bold 15pt Segoe Print';
-    context.fillText('Baymax', 130, 55);
-
-  }
-
-  function login_validate(){
-    //alert("in login_validate()");
-    /* error_login : display field */
-    var username_login = document.getElementById("username").value;
-    var password_login = document.getElementById("password").value;
-    var varlidator = new Input_Validator();
-
-    if (varlidator.validate_email(username_login, "error_login")) {
-      if (varlidator.validate_passwords(password_login, "error_login")) {
-        //document.getElementById("error_login").innerHTML = "OK";
-        alert("Validation passed!");
-        return false;
-      }
-    }
-    return false;
-    /* do some pop out error messages - probably with canvas */
-  }
-  </script>
 
   </div>
 </div>
+</section>
 
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <div class="socials">
+          <a href="https://www.instagram.com/simplycharmlings/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/totorothings/status/723994306290278400" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/Charmlings-Isle-169452936542/" target="_blank" class="fa fa-facebook"></a>
+          <a href="mailto:simplycharmlings@gmail.com?subject=Product%20Inquiry&amp;body=Item%20Description%3A" target="_blank" class="fa fa-envelope-o"></a>
+        </div>
+        <div class="copyright"><span class="brand">Baymax </span> &copy; <span id="copyright-year"></span>  </br> San Jose State University | CS 174
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+/* JAVASCRIPT VALIDATION */
+$('#reg-but').click(function(){
+  //alert("hello");
+  var valid_flag   = true;
+  var reg_email    = document.reg_form.email.value;
+  var reg_fname    = document.reg_form.fname.value;
+  var reg_lname    = document.reg_form.lname.value;
+  var reg_password = document.reg_form.password.value;
+  var reg_address  = document.reg_form.address.value;
+  var reg_phone    = document.reg_form.phone.value;
 
-<div class="copyright" style="display: block;">
-  <p class="baymax">© Copyright 2016 CS174 Baymax All Rights Reserved.</p>
-</div>
+  var email_regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  var passw_regex_special_chars = /[_$@#%^&*!~]/;
+  var passw_regex_lower_letters = /[a-z]/;
+  var passw_regex_upper_letters = /[A-Z]/;
+  var passw_regex_numbers       = /[0-9]/;
+  var phone_regex               = /[0-9]/;
+  var error = "[Invalid Field] ";
+  if(!email_regex.test(reg_email)){
+    error += "Email ";
+    valid_flag = false;
+  }
+  if(reg_fname.length < 0 && reg_lname.length < 0){
+    error += "Name ";
+    valid_flag = false;
+  }
+  if(reg_address.length < 0){
+    error += "Address ";
+    valid_flag = false;
+  }
+  if(reg_phone.length < 7){
+    error += "Phone ";
+    valid_flag = false;
+  }
 
-</div>
+  if(reg_password.length < 6){
+    error += "Password(Length <6) ";
+    valid_flag = false;
+  }
+
+  //alert(error);
+  //alert(login_passw.match(passw_regex_special_chars).length);
+  var result = reg_password.match(passw_regex_special_chars);
+  if(result == null || result.length < 1){
+    error += "Password(Special Char) ";
+    valid_flag = false;
+  }
+  result = reg_password.match(passw_regex_lower_letters);
+  if(result == null || result.length < 1){
+    error += "Password(Lower Letter x3) ";
+    valid_flag = false;
+  }
+  //alert(error);
+  result = reg_password.match(passw_regex_upper_letters);
+  if(result == null || result.length < 1){
+    error += "Password(Upper Letter x1) ";
+    valid_flag = false;
+  }
+  //alert(error);
+  result = reg_password.match(passw_regex_numbers);
+  if(result == null || result.length < 1){
+    error += "Password(Number x3) ";
+    valid_flag = false;
+  }
+  //alert(error);
+  if(!valid_flag){
+    alert(error);
+    window.location.href='login.html';
+  }
+  else{
+    //alert("OK");
+    var info = {
+      email: reg_email,
+      password: reg_password,
+      fname: reg_fname,
+      lname: reg_lname,
+      address: reg_address,
+      phone: reg_phone
+    };
+    $.ajax({
+      type: 'POST',
+      url:  'reg.php',
+      data: info,
+      success: function(response){
+        if(response.localeCompare("true") == 0){
+          alert("Register Successfully!");
+          window.location.href="index.html";
+        }
+        else{
+          alert("Register Failed.");
+          window.location.href="login.html";
+        }
+      }
+    });
+  }
+});
+
+$('#login-but').click(function(){
+  var valid_flag = true;
+  var error = "[Invalid field] ";
+  var login_email = document.login_form.email.value;
+  var login_passw = document.login_form.password.value;
+
+  // REGEX
+  //var email_regex = /^[a-zA-Z0-9._]@[a-zA-Z0-9]{3,}\.[a-zA-Z]{3}$/;
+  var email_regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  var passw_regex_special_chars = /[_$@#%^&*!~]/;
+  var passw_regex_lower_letters = /[a-z]/;
+  var passw_regex_upper_letters = /[A-Z]/;
+  var passw_regex_numbers       = /[0-9]/;
+  //alert("hello");
+  if(!email_regex.test(login_email)){
+    error += "Email ";
+    valid_flag = false;
+  }
+  //alert(error);
+  if(login_passw.length < 6){
+    error += "Password(Length <6) ";
+    valid_flag = false;
+  }
+
+  //alert(error);
+  //alert(login_passw.match(passw_regex_special_chars).length);
+  var result = login_passw.match(passw_regex_special_chars);
+  if(result == null || result.length < 1){
+    error += "Password(Special Char) ";
+    valid_flag = false;
+  }
+  //alert(error);
+  result = login_passw.match(passw_regex_lower_letters);
+  if(result == null || result.length < 1){
+    error += "Password(Lower Letter x3) ";
+    valid_flag = false;
+  }
+  //alert(error);
+  result = login_passw.match(passw_regex_upper_letters);
+  if(result == null || result.length < 1){
+    error += "Password(Upper Letter x1) ";
+    valid_flag = false;
+  }
+  //alert(error);
+  result = login_passw.match(passw_regex_numbers);
+  if(result == null || result.length < 1){
+    error += "Password(Number x3) ";
+    valid_flag = false;
+  }
+  //alert(error);
+  if(!valid_flag){
+    alert(error);
+    window.location.href='login.html';
+  }
+  else{
+    //alert("OK");
+    var info = {email: login_email, password: login_passw};
+    var res;
+
+    $.ajax({
+      type: 'POST',
+      url:  'login.php',
+      data: info,
+      success: function(response){
+        res = response;
+        if(response.localeCompare("true") == 0){
+          alert("Log in Successfully!");
+          window.location.href="index.html";
+        }
+        else if (response.localeCompare("already") == 0) {
+          alert("Already logged in.");
+          window.location.href="index.html";
+        }
+        else{
+          alert("Log in Failed.");
+          window.location.href="login.html";
+        }
+      }
+    });
+  }
+});
+</script>
 </body>
 </html>
